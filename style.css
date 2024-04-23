@@ -131,7 +131,7 @@ body {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 1200px) {
-    h1.logo {
+    .logo {
        width: 50%;
             }
         }
