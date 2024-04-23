@@ -171,23 +171,19 @@ div.main {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 1200px) {
-    .logo {
-       width: 50%;
-            }
-    .body {
-        grid-template-rows: minmax(50px, 150px);
-    }
     h1 {
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+    }
+    p.work {
+        font-size: .9rem;
+        text-align: right;
+        grid-column: 2 / 5;
+    }
+    h2.work {
         font-size: 1.2rem;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    p {
-        font-size: .5rem;
-    }
-    h2 {
-        font-size: .75rem;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        text-align: justify;
     }
         }
