@@ -8,9 +8,11 @@ html {
     background-color: #c6c29f;
 }
 
-div.body {
+.body {
     box-sizing: border-box;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 header {
@@ -22,6 +24,7 @@ header {
     margin: auto;
     z-index: -2;
     padding: 0;
+    grid-row: 1, 3;
 }
 
 header.logo {
@@ -42,15 +45,14 @@ header.logo {
     transition: 2s;
 }
 
-body {
-  margin: 0;
-}
-
 h1 {
+    margin-top: 3rem;
+    padding: 2rem;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5rem;
     z-index: 1;
+    grid-row-start: 4, 5;
 }
 
 h2 {
