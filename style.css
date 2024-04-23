@@ -14,13 +14,13 @@ body.body {
 
 header {
     position: absolute;
-    background-color: hsl(72, 21%, 31%);
+    background-color: rgb(89, 96, 62);
     display: flex;
     flex-flow: column;
     flex: 4 100%;
     justify-content: center;
     width: 100%;
-    margin: auto;
+    margin-top: -10px;
     z-index: -2;
     padding: 0;
 }
@@ -84,7 +84,7 @@ div.main {
   --bar-width: 60px;
   --bar-height: 8px;
   --hamburger-gap: 6px;
-  --foreground: #9d9b80;
+  --foreground: #9B9773;
   --background: white;
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
@@ -171,19 +171,31 @@ div.main {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 1200px) {
+    header {
+        max-height: 75%;
+        margin-top: -10px;
+    }
+    .logo {
+        width: 75%;
+        margin: 0;
+    }
     h1 {
         font-size: 3rem;
-        margin: 0;
+        margin-top: -350px;
         padding: 0;
-        text-align: justify;
+        text-align: center;
+        grid-column: 2 / 5;
     }
     p.work {
         font-size: .9rem;
         text-align: right;
+        margin-top: -120px;
         grid-column: 2 / 5;
     }
     h2.work {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: right;
+        margin-top: -150px;
+        grid-column: 2 / 5;
     }
         }
