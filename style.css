@@ -169,13 +169,20 @@ p {
     .logo {
        width: 50%;
             }
+    .body {
+        grid-template-rows: minmax(50px, 150px);
+    }
     h1 {
         font-size: 1.2rem;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
     p {
-        font-size: .75rem;
+        font-size: .5rem;
     }
     h2 {
-        font-size: .9srem;
+        font-size: .75rem;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
         }
