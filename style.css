@@ -18,8 +18,8 @@ h1 {
     z-index: -2;
 }
 
-.logo {
-    width: 75;
+h1.logo {
+    width: 75% !important;
 }
 
 .nav {
