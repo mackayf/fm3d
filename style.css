@@ -18,7 +18,7 @@ h1 {
     z-index: -2;
 }
 
-h1.logo {
+.logo {
     width: 75% !important;
 }
 
