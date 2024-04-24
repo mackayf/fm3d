@@ -16,11 +16,11 @@ header {
     position: absolute;
     background-color: rgb(89, 96, 62);
     display: flex;
-    flex-flow: column;
     flex: 4 100%;
     justify-content: center;
     width: 100%;
     margin-top: -10px;
+    margin-bottom: 0;
     z-index: -2;
     padding: 0;
 }
@@ -44,19 +44,19 @@ header.logo {
 }
 
 h1 {
-    margin-top: 0;
-    padding: 2rem;
+    margin-top: -300;
+    margin-bottom: 5rem;
+    padding: 0;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;
     z-index: 1;
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row: 1
+    grid-row: 0;
+    grid-column: 2 / 5;
 }
 
 h2.work {
+    margin-top: -150;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: underline;
     z-index: 1;
@@ -68,7 +68,7 @@ p.work {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #393728;
     font-size: .8rem;
-    margin: 0;
+    margin-top: -100;
     text-align: justify;
     z-index: 1;
     grid-column: 2;
@@ -180,11 +180,11 @@ div.main {
         margin: 0;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: -350px;
         padding: 0;
-        text-align: center;
-        grid-column: 2 / 5;
+        text-align: right;
+        grid-column: 1 / 5;
     }
     p.work {
         font-size: .9rem;
